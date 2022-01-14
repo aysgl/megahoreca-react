@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, DropdownButton, Dropdown } from "react-bootstrap";
 import HeaderProfileDropdown from "./HeaderProfileDropdown";
 import HeaderShoppingcart from "./HeaderShoppingcart";
 import HeaderSearch from "./HeaderSearch";
@@ -19,9 +19,13 @@ export default function Header() {
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
+                <Navbar.Collapse className='justify-content-between'>
                     {/* <Megamenu /> */}
-                    <p>Mega Menu gelecek</p>
+                    <DropdownButton id="dropdown-basic-button" title="Mega menü gelecek">
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </DropdownButton>
                     <HeaderSearch />
                     <HeaderProfileDropdown />
                     <HeaderShoppingcart />

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeaderSearch() {
     return (
-        <InputGroup>
+        <InputGroup className="w-75 ms-2">
             <InputGroup.Text id="basic-addon1">
                 <i className="icon-surface1-35" />
             </InputGroup.Text>

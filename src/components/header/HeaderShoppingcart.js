@@ -3,7 +3,7 @@ import { Container, Dropdown } from "react-bootstrap";
 
 export default function HeaderShoppingcart() {
     return <>
-        <Dropdown align={"end"}>
+        <Dropdown align={"end"} className="ms-2">
             <Dropdown.Toggle variant="outline-primary">
                 <i className="icon-surface1-36" />
             </Dropdown.Toggle>

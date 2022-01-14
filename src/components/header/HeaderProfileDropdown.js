@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeaderProfileDropdown() {
     return (
-        <Dropdown align={"end"}>
+        <Dropdown align={"end"} className="ms-2">
             <Dropdown.Toggle variant="outline-primary">
                 <i className="icon-surface1-30" />
             </Dropdown.Toggle>
