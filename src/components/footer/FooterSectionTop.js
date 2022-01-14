@@ -9,23 +9,23 @@ export default function FooterSectionTop() {
     return (
         <Container className="py-5 text-left">
             <Row>
-                <Col className="border-0 pr-4">
+                <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[0]} />
                 </Col>
-                <Col className="border-0 pr-4">
+                <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[1]} />
                     <FooterTopCategory category={CATEGORIES[2]} />
                 </Col>
-                <Col className="border-0 pr-4">
+                <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[3]} />
                     <FooterTopCategory category={CATEGORIES[4]} />
                 </Col>
-                <Col className="border-0 pr-4">
+                <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[5]} />
                     <FooterTopCategory category={CATEGORIES[6]} />
                     <FooterTopCategory category={CATEGORIES[7]} />
                 </Col>
-                <Col className="border-0 pr-4">
+                <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[8]} />
                     <FooterTopCategory category={CATEGORIES[9]} />
                     <FooterTopCategory category={CATEGORIES[10]} />

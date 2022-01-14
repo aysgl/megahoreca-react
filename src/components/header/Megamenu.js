@@ -2,46 +2,46 @@ import React from 'react'
 
 export default function Megamenu() {
     return (
-        <ul class="navbar-nav w-100 justify-content-between ml-5">
+        <ul class="navbar-nav w-100 justify-content-between ms-5">
             <li class="nav-item align-self-center dropdown-hoverable">
-                <a class="custom-nav nav-link rounded-0 text-left px-3 text-uppercase font-weight-bold"
+                <a class="custom-nav nav-link rounded-0 text-left px-3 text-uppercase fw-bold"
                     href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    <i style="font-size: 10px" class="icon-surface1-38 pr-2"></i>Aan De Slag
+                    <i style="font-size: 10px" class="icon-surface1-38 pe-2"></i>Aan De Slag
                 </a>
                 <div class="d-block d-sm-none d-none d-sm-block d-md-none d-md-block d-lg-none">
                     <div class="dropdown-menu border-0 pt-0 mt-0 w-100">
                         <ul style="line-height: 30px" class="list-unstyled p-4">
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-12 pr-2"></i>Tuin</a></li>
+                                class="icon-surface1-12 pe-2"></i>Tuin</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-11 pr-2"></i>Gereedschap</a></li>
+                                class="icon-surface1-11 pe-2"></i>Gereedschap</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-11 pr-2"></i>Bouwmaterialen</a></li>
+                                class="icon-surface1-11 pe-2"></i>Bouwmaterialen</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-Varlk-11 pr-2"></i>Hout & schrijnwerk</a></li>
+                                class="icon-Varlk-11 pe-2"></i>Hout & schrijnwerk</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-Varlk-9 pr-2"></i>Verf & houtbescherming</a></li>
+                                class="icon-Varlk-9 pe-2"></i>Verf & houtbescherming</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-7 pr-2"></i>Sanitair</a></li>
+                                class="icon-surface1-7 pe-2"></i>Sanitair</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-2 pr-2"></i>Verlichting</a></li>
+                                class="icon-surface1-2 pe-2"></i>Verlichting</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-6 pr-2"></i>Ijzerwaren</a></li>
+                                class="icon-surface1-6 pe-2"></i>Ijzerwaren</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1 pr-2"></i>Elektriciteit</a></li>
+                                class="icon-surface1 pe-2"></i>Elektriciteit</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-3 pr-2"></i>Verwarming</a></li>
+                                class="icon-surface1-3 pe-2"></i>Verwarming</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-5 pr-2"></i>Huishouden</a></li>
+                                class="icon-surface1-5 pe-2"></i>Huishouden</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-Varlk-18 pr-2"></i>Behang & decoratie</a></li>
+                                class="icon-Varlk-18 pe-2"></i>Behang & decoratie</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-9 pr-2"></i>Auto & fiets</a></li>
+                                class="icon-surface1-9 pe-2"></i>Auto & fiets</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-8 pr-2"></i>Keuken</a></li>
+                                class="icon-surface1-8 pe-2"></i>Keuken</a></li>
                             <li><a class="text-dark" href="#"><i style="width: 30px; display: inline-block;"
-                                class="icon-surface1-10 pr-2"></i>Dierenverzorging</a></li>
+                                class="icon-surface1-10 pe-2"></i>Dierenverzorging</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,64 +55,64 @@ export default function Megamenu() {
                                         <li><a class="nav-link active" href="#tuin" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-12 pr-2"></i>Tuin</a></li>
+                                                class="icon-surface1-12 pe-2"></i>Tuin</a></li>
                                         <li><a class="nav-link" href="#gereedschap" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-11 pr-2"></i>Gereedschap</a></li>
+                                                class="icon-surface1-11 pe-2"></i>Gereedschap</a></li>
                                         <li><a class="nav-link" href="#bouwmaterialen" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-11 pr-2"></i>Bouwmaterialen</a>
+                                                class="icon-surface1-11 pe-2"></i>Bouwmaterialen</a>
                                         </li>
                                         <li><a class="nav-link" href="#hout" role="tab" data-toggle="tab"><i
                                             style="width: 30px; display: inline-block;"
-                                            class="icon-Varlk-11 pr-2"></i>Hout & schrijnwerk</a>
+                                            class="icon-Varlk-11 pe-2"></i>Hout & schrijnwerk</a>
                                         </li>
                                         <li><a class="nav-link" href="#verf" role="tab" data-toggle="tab"><i
                                             style="width: 30px; display: inline-block;"
-                                            class="icon-Varlk-9 pr-2"></i>Verf & houtbescherming</a>
+                                            class="icon-Varlk-9 pe-2"></i>Verf & houtbescherming</a>
                                         </li>
                                         <li><a class="nav-link" href="#sanitair" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-7 pr-2"></i>Sanitair</a></li>
+                                                class="icon-surface1-7 pe-2"></i>Sanitair</a></li>
                                         <li><a class="nav-link" href="#verlichting" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-2 pr-2"></i>Verlichting</a></li>
+                                                class="icon-surface1-2 pe-2"></i>Verlichting</a></li>
                                         <li><a class="nav-link" href="#ijzerwaren" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-6 pr-2"></i>Ijzerwaren</a></li>
+                                                class="icon-surface1-6 pe-2"></i>Ijzerwaren</a></li>
                                         <li><a class="nav-link" href="#elektriciteit" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1 pr-2"></i>Elektriciteit</a></li>
+                                                class="icon-surface1 pe-2"></i>Elektriciteit</a></li>
                                         <li><a class="nav-link" href="#verwarming" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-3 pr-2"></i>Verwarming</a></li>
+                                                class="icon-surface1-3 pe-2"></i>Verwarming</a></li>
                                         <li><a class="nav-link" href="#huishouden" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-5 pr-2"></i>Huishouden</a></li>
+                                                class="icon-surface1-5 pe-2"></i>Huishouden</a></li>
                                         <li><a class="nav-link" href="#behang" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-Varlk-18 pr-2"></i>Behang & decoratie</a>
+                                                class="icon-Varlk-18 pe-2"></i>Behang & decoratie</a>
                                         </li>
                                         <li><a class="nav-link" href="#auto" role="tab" data-toggle="tab"><i
                                             style="width: 30px; display: inline-block;"
-                                            class="icon-surface1-9 pr-2"></i>Auto & fiets</a></li>
+                                            class="icon-surface1-9 pe-2"></i>Auto & fiets</a></li>
                                         <li><a class="nav-link" href="#keuken" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-8 pr-2"></i>Keuken</a></li>
+                                                class="icon-surface1-8 pe-2"></i>Keuken</a></li>
                                         <li><a class="nav-link" href="#dierenverzorging" role="tab"
                                             data-toggle="tab"><i
                                                 style="width: 30px; display: inline-block;"
-                                                class="icon-surface1-10 pr-2"></i>Dierenverzorging</a>
+                                                class="icon-surface1-10 pe-2"></i>Dierenverzorging</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -123,7 +123,7 @@ export default function Megamenu() {
                                                 <div class="col-md-5 col-12">
                                                     <ul style="line-height: 28px" class="list-unstyled">
                                                         <li>
-                                                            <h4 class="font-weight-bold">Tuinconstructies &
+                                                            <h4 class="fw-bold">Tuinconstructies &
                                                                 opberging</h4>
                                                         </li>
                                                         <li><a href="#" class="text-dark">Tuinhuizen</a>
@@ -146,7 +146,7 @@ export default function Megamenu() {
                                                     <ul style="line-height: 28px"
                                                         class="list-unstyled mt-5">
                                                         <li>
-                                                            <h4 class="font-weight-bold">Tuindraad</h4>
+                                                            <h4 class="fw-bold">Tuindraad</h4>
                                                         </li>
                                                         <li><a href="#" class="text-dark">Terras &
                                                             bestrating</a></li>
@@ -163,7 +163,7 @@ export default function Megamenu() {
                                                     <ul style="line-height: 28px"
                                                         class="list-unstyled mt-5">
                                                         <li>
-                                                            <h4 class="font-weight-bold">Tuindraad</h4>
+                                                            <h4 class="fw-bold">Tuindraad</h4>
                                                         </li>
                                                         <li><a href="#" class="text-dark">Terras &
                                                             bestrating</a></li>
@@ -181,7 +181,7 @@ export default function Megamenu() {
                                                 <div class="col-md-5 col-12">
                                                     <ul style="line-height: 28px" class="list-unstyled">
                                                         <li>
-                                                            <h4 class="font-weight-bold">Tuingereedschap &
+                                                            <h4 class="fw-bold">Tuingereedschap &
                                                                 machines</h4>
                                                         </li>
                                                         <li><a href="#" class="text-dark">Grasmaaiers</a>
@@ -209,7 +209,7 @@ export default function Megamenu() {
                                                     <ul style="line-height: 28px"
                                                         class="list-unstyled mt-5">
                                                         <li>
-                                                            <h4 class="font-weight-bold">Partytenten &
+                                                            <h4 class="fw-bold">Partytenten &
                                                                 zonnetenten</h4>
                                                         </li>
                                                         <li><a href="#" class="text-dark">Zwembaden</a></li>
@@ -321,10 +321,10 @@ export default function Megamenu() {
                     <div class="input-group input-group-lg">
                         <div class="input-group-prepend">
                             <span style="color:#c8c8c8"
-                                class="border-right-0 input-group-text bg-white pl-4" id="basic-addon1"><i
+                                class="border-right-0 input-group-text bg-white ps-4" id="basic-addon1"><i
                                     class="icon-surface1-35"></i></span>
                         </div>
-                        <input type="text" class="form-control border-left-0 pl-2 text-blue"
+                        <input type="text" class="form-control border-left-0 ps-2 text-blue"
                             placeholder="trouvez-le maintenant!" aria-label="email"
                             aria-describedby="button-addon2" />
                         <div class="input-group-append">
@@ -391,33 +391,33 @@ export default function Megamenu() {
                                     <li class="dropdown-divider"></li>
                                     <li style="white-space: normal !important" class="media dropdown-item">
                                         <div style="width: 80px !important; text-align: center;"
-                                            class="mr-2">
+                                            class="me-2">
                                             <img src="img/category-1.png" height="80px"
                                                 class="img-responsive" alt="..." />
                                         </div>
                                         <div class="pt-3">
                                             <h4 class="mb-0">Garbarbecue Spring 300 grijs Hoes barbecue Uni
                                                 XXL Series 2</h4>
-                                            <h3 class="font-weight-bold"><span>€499,</span><span
+                                            <h3 class="fw-bold"><span>€499,</span><span
                                                 class="h6">99</span></h3>
                                         </div>
                                     </li>
                                     <li style="white-space: normal !important" class="media dropdown-item">
                                         <div style="width: 80px !important; text-align: center;"
-                                            class="mr-2">
+                                            class="me-2">
                                             <img src="img/category-2.png" height="80px"
                                                 class="img-responsive" alt="..." />
                                         </div>
                                         <div class="pt-3">
                                             <h4 class="mb-0">Tuinhuis Manor 65 kunststof 185x152x226 cm</h4>
-                                            <h3 class="font-weight-bold"><span>€499,</span><span
+                                            <h3 class="fw-bold"><span>€499,</span><span
                                                 class="h6">99</span></h3>
                                         </div>
                                     </li>
                                     <li></li>
 
                                 </ul>
-                                <div class="container py-3"><button class="btn btn-dark mr-2">ALLER AU
+                                <div class="container py-3"><button class="btn btn-dark me-2">ALLER AU
                                     PANIER</button><button class="btn btn-blue">ACHETER
                                         MAINTENANT</button></div>
                             </div>

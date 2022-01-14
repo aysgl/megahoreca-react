@@ -1,7 +1,7 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 export default function ModalComponent() {
     /*const [show, setShow] = useState(false);
@@ -31,7 +31,7 @@ export default function ModalComponent() {
         </>*/
 
     return <Modal id="product-one" className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog"
-               aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <Modal.Dialog className="modal-dialog modal-lg modal-dialog-centered">
             <div className="modal-content">
                 <Modal.Body className="modal-body">
@@ -41,10 +41,10 @@ export default function ModalComponent() {
                     <div className="p-3">
                         <div className="text-center">
                             <Card.Title className="card-title mb-1 text-left">Apple iPad (2018) 32GB</Card.Title>
-                            <p className="text-success mb-0 text-left"><small><i style={{fontSize: "9px"}}
-                                                                                 className="icon-Varlk-41 pr-2"/>laatste
+                            <p className="text-success mb-0 text-left"><small><i style={{ fontSize: "9px" }}
+                                className="icon-Varlk-41 pe-2" />laatste
                                 10 stuks</small></p>
-                            <img className="img-fluid" alt="product" src="../images/product-1b.png"/>
+                            <img className="img-fluid" alt="product" src="../images/product-1b.png" />
                         </div>
                     </div>
                 </Modal.Body>

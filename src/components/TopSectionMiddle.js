@@ -14,11 +14,11 @@ export default function TopSectionMiddle() {
                     <Col sm={7} className="align-self-center">
                         <div className="text-left">
                             <p className="text-black-30">GARDEN</p>
-                            <h1 className="font-weight-bold pr-5">Barbecue Original Kettle 47cm</h1>
-                            <p className="text-muted pb-3 pr-5">De zwarte barbecue Original Kettle van Weber
+                            <h1 className="fw-bold pe-5">Barbecue Original Kettle 47cm</h1>
+                            <p className="text-muted pb-3 pe-5">De zwarte barbecue Original Kettle van Weber
                                 heeft een diameter van 47cm en een verchroomd rooster.</p>
                             <Button variant="primary"
-                                className="rounded-0 px-4 p-2 font-weight-bold">SHOP
+                                className="rounded-0 px-4 p-2 fw-bold">SHOP
                                 NOW
                             </Button>
                         </div>

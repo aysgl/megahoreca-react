@@ -31,13 +31,13 @@ export default function FooterSectionBottom() {
 
 
                             </div>
-                            <div className="pt-3 mr-5">
+                            <div className="pt-3 me-5">
                                 <h3 className="mb-0">Aanmelden nieuwsbrief</h3>
                                 <p>Altijd als eerste op de hoogte.</p>
                                 <div className="input-group">
                                     <div className="input-group-prepend">
                                         <span
-                                            className="border-0 pl-3 border-primary input-group-text bg-white text-primary"
+                                            className="border-0 ps-3 border-primary input-group-text bg-white text-primary"
                                             id="basic-addon1"><i className="icon-surface1-56" /></span>
                                     </div>
                                     <input type="text" className="border-0 form-control text-primary"
@@ -51,7 +51,7 @@ export default function FooterSectionBottom() {
                 </Col>
                 <Col sm={4} md={2}>
                     <ul className="list-unstyled">
-                        <li className="h4 font-weight-bold pb-2">MegaHoreca.com</li>
+                        <li className="h4 fw-bold pb-2">MegaHoreca.com</li>
                         <li>Over ons</li>
                         <li>Nieuws van ons</li>
                         <li>Mededeling</li>
@@ -65,7 +65,7 @@ export default function FooterSectionBottom() {
                 </Col>
                 <Col sm={4} md={2}>
                     <ul className="list-unstyled">
-                        <li className="h4 font-weight-bold pb-2">Klantenservice</li>
+                        <li className="h4 fw-bold pb-2">Klantenservice</li>
                         <li>Bestelling</li>
                         <li>Betaling</li>
                         <li>Verzending & bezorging</li>
@@ -77,7 +77,7 @@ export default function FooterSectionBottom() {
                 </Col>
                 <Col sm={4} md={2}>
                     <ul className="list-unstyled">
-                        <li className="h4 font-weight-bold pb-2">Zakelijk</li>
+                        <li className="h4 fw-bold pb-2">Zakelijk</li>
                         <li>Zakelijke klanten</li>
                         <li>Affiliate programma</li>
                         <li>Waardebonnen</li>
@@ -114,8 +114,8 @@ export default function FooterSectionBottom() {
                     </Col>
                     <Col className="text-right">
                         <ul className="list-inline">
-                            <li className="list-inline-item pr-2"><i className="icon-surface1-46" /></li>
-                            <li className="list-inline-item pr-2"><i className="icon-surface1-42" /></li>
+                            <li className="list-inline-item pe-2"><i className="icon-surface1-46" /></li>
+                            <li className="list-inline-item pe-2"><i className="icon-surface1-42" /></li>
                             <li className="list-inline-item"><i className="icon-surface1-34" /></li>
                         </ul>
                     </Col>

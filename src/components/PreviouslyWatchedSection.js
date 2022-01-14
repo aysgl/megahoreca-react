@@ -9,24 +9,24 @@ export default function PreviouslyWatchedSection() {
         slidesToShow: 6,
         slidesToScroll: 1
     }
-    return  <Container className="py-5 pr-0 pl-4 pl-md-0">
+    return <Container className="py-5 pr-0 ps-4 pl-md-0">
         <h4 className="text-uppercase text-center title pb-3">Eerder Bekeken Door Jou</h4>
         <div className="shadow rounded main-content">
-        <Slider {...settings}>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-            <PreviouslyWatchedItem/>
-        </Slider>
+            <Slider {...settings}>
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+                <PreviouslyWatchedItem />
+            </Slider>
         </div>
     </Container>
 }

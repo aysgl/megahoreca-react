@@ -337,10 +337,6 @@ thead tr {
 }
 
 /*--- Carousel OWL end ---*/
-.card-body img {
-  text-align: center !important;
-}
-
 .no-flex {
   /*flex: 1 1 auto;*/
   flex: inherit !important;
@@ -387,13 +383,8 @@ thead tr {
   border-top: none !important;
 }
 
-.navbar-nav .vertical-hr {
+.navbar-nav {
   border-right: 1px solid rgba(240, 240, 240, 0.15) !important;
-}
-
-.vertical-hr {
-  border-right: 1px solid #f0f0f0 !important;
-  height: 100%;
 }
 
 .horizantal-hr {
