@@ -1,28 +1,43 @@
+import { useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
-import React from "react";
 
 export default function HeaderProfileDropdown() {
+    const [show, setShow] = useState(false);
+    const showDropdown = (e) => {
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
+
     return (
-        <Dropdown align={"end"} className="ms-2">
+        <Dropdown
+            align={"end"}
+            className="ms-2"
+            show={show}
+            onMouseEnter={showDropdown}
+            onMouseLeave={hideDropdown}>
             <Dropdown.Toggle variant="outline-primary">
                 <i className="icon-surface1-30" />
             </Dropdown.Toggle>
-            <Dropdown.Menu>
-                <Form className="px-4 py-3">
+            <Dropdown.Menu style={{ minWidth: "20rem" }}>
+                <Form className="p-3">
                     <Form.Group>
-                        <Form.Label>Email adress</Form.Label>
+                        <Form.Label>Adresse email</Form.Label>
                         <Form.Control type="email" id="emailField"
-                            placeholder="email@example.com" />
+                            placeholder="Adresse email" />
                     </Form.Group>
                     <Form.Group className="mt-2">
-                        <Form.Label>Passwoord</Form.Label>
+                        <Form.Label>Mot de passe</Form.Label>
                         <Form.Control type="password"
-                            id="passwordField" placeholder="password" />
+                            id="passwordField" placeholder="Mot de passe" />
                     </Form.Group>
                     <Form.Group className="mt-2">
-                        <Form.Check type="checkbox" label="Herinner mij" id="rememberMeCheckbox" />
+                        <Form.Check type="checkbox" label="Se souvenir de moi" id="rememberMeCheckbox" />
                     </Form.Group>
-                    <Button type="submit" className="mt-3" variant="primary">Inloggen</Button>
+                    <div className="w-100 d-flex justify-content-end">
+                        <Button type="submit" className="mt-3 w-100" variant="primary">Se Connecter</Button>
+                    </div>
                 </Form>
                 <Dropdown.Divider />
                 <Dropdown.Item><a>Ben je nieuw hier? Schrijf je in!</a></Dropdown.Item>

@@ -1,20 +1,19 @@
 import React from 'react'
-import HeroSection from '../../components/HeroSection'
+import HeroSection from '../../components/Advertisement'
 import PerksBanner from '../../components/PerksBanner'
-import PreviouslyWatchedSection from '../../components/PreviouslyWatchedSection'
-import PromotionSection from '../../components/PromotionSection'
-import ProposedProductsSection from '../../components/ProposedProductsSection'
-import TopSection from '../../components/TopSection'
+import SlickCarouselSection from '../../components/slick/SlickCarouselSection'
+import MasonrySection from '../../components/MasonrySection'
+import CarouselSection from '../../components/carousel/SliderSection'
 
 export default function Home() {
     return (
         <>
-            <TopSection />
-            <PromotionSection />
+            <CarouselSection />
+            <SlickCarouselSection title="PROMOTIES VAN DE WEEK" />
             <HeroSection />
-            <ProposedProductsSection />
-            <PromotionSection />
-            <PreviouslyWatchedSection />
+            <MasonrySection />
+            <SlickCarouselSection title="PROMOTIES VAN DE WEEK" />
+            <SlickCarouselSection title="EERDER BEKEKEN DOOR JOU" card="small gelecek" />
             <PerksBanner />
         </>
     )

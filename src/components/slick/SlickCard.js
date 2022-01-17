@@ -2,24 +2,31 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card"
-import product1 from "../images/product-1.png";
+import product1 from "../../images/product-1.png";
 
-export default function PromotionCard() {
+export default function SlickCard({ stock, stars }) {
     return <>
         <div data-toggle="modal" data-target="#product-one" className="item">
             <Card className="border-end">
                 <Card.Body className="p-0">
                     <div className="p-3 pb-0 mb-0">
                         <p className="text-black-50 mb-1 d-flex align-items-center small">
-                            <i style={{ fontSize: "9px" }}
-                                className="icon-surface1-44 pe-2" />
-                            Computers & Tablets</p>
-                        <Card.Title as="h5" className="mb-1 fw-bold">Apple iPad (2018) 32GB</Card.Title>
-                        <p className="text-success small mb-0">
-                            <i style={{ fontSize: "9px" }}
-                                className="icon-Varlk-41 pe-2" />laatste 10
-                            stuks
+                            <i style={{ fontSize: "9px" }} className="icon-surface1-44 pe-2" />
+                            Computers & Tablets
                         </p>
+                        <Card.Title className="mb-1 fw-bold h6">Apple iPad (2018) 32GB</Card.Title>
+                        {stock &&
+                            <p className="text-success small mb-0">
+                                <i style={{ fontSize: "9px" }} className="icon-Varlk-41 pe-2" />
+                                laatste 10 stuks
+                            </p>
+                        }
+                        {stars &&
+                            <p className="text-success small mb-0">
+                                <i style={{ fontSize: "9px" }} className="icon-Varlk-41 pe-2" />
+                                yildiz
+                            </p>
+                        }
                     </div>
                     <div style={{ height: "250px" }} className="p-2 pt-4 overlay">
                         <img className="img-fluid" src={product1} />

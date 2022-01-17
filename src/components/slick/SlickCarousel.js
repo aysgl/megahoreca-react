@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import PromotionCard from "./PromotionCard";
+import SlickCard from "./SlickCard";
 
-export default function Carousel() {
+export default function SlickCarousel() {
     const settings = {
         infinite: true,
         speed: 250,
@@ -13,22 +13,22 @@ export default function Carousel() {
         <div>
             <Slider {...settings}>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
                 <div>
-                    <PromotionCard/>
+                    <SlickCard />
                 </div>
             </Slider>
         </div>

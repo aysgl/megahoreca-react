@@ -8,8 +8,8 @@ import Megamenu from './Megamenu';
 
 export default function Header() {
     return <>
-        <Navbar bg="white" expand="lg" className="pt-2 pb-0 border-bottom shadow" role="navigation" sticky="top">
-            <Container>
+        <Navbar bg="white" expand="lg" className="py-0 shadow" role="navigation" sticky="top" style={{ zIndex: "1046", height: "80px" }}>
+            <Container className='h-100'>
                 <Navbar.Brand href="#home" className="mr-auto">
                     <img
                         src={logo}
@@ -19,16 +19,13 @@ export default function Header() {
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle />
-                <Navbar.Collapse className='justify-content-between'>
-                    {/* <Megamenu /> */}
-                    <DropdownButton id="dropdown-basic-button" title="Mega menü gelecek">
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </DropdownButton>
-                    <HeaderSearch />
-                    <HeaderProfileDropdown />
-                    <HeaderShoppingcart />
+                <Navbar.Collapse className='h-100'>
+                    <Megamenu />
+                    <div className='w-75 d-flex'>
+                        <HeaderSearch />
+                        <HeaderProfileDropdown />
+                        <HeaderShoppingcart />
+                    </div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

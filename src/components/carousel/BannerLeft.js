@@ -1,15 +1,13 @@
 import { Button, Col, Row } from "react-bootstrap";
-import mansets from "../images/mansets.png"
+import mansets from "../../images/mansets.png"
 import React from "react";
 
-export default function TopSectionLeft() {
+export default function BannerLeft() {
     return <Col lg={2} md={12} className="d-none d-xl-block">
         <div className="d-flex align-content-between flex-wrap h-100 border p-2">
             <Row className="row">
                 <Col xs={8}>
-                    <h4>
-                        <span className="font-weight-light">Aanbevolen</span> Combinaties
-                    </h4>
+                    <p className="lh-sm mb-3"><span className="fw-light">Aanbevolen</span> Combinaties</p>
                 </Col>
                 <Col xs={2}>
                     <div style={{ position: "absolute", marginLeft: "-15px" }}>
@@ -22,15 +20,17 @@ export default function TopSectionLeft() {
                     </div>
                 </Col>
                 <Col xs={12}>
-                    <div className="percent-tag-blue bg-primary">
-                        <div className="percent-tag__content">
-                            <div style={{ width: "88px" }} className="bg-white rounded text-right p-2">
-                                <span className="fw-bold text-black-30"><del>799,99</del></span>
-                                <h4 className="fw-bold mb-0 h3 text-primary"><span
-                                    className="h6 text-primary pr-1">€</span><span>499,</span><span
-                                        className="h6">99</span></h4>
+                    <div className="percent-tag-blue bg-primary d-flex justify-content-center">
+                        <div className="percent-tag__content p-2">
+                            <div style={{ width: "88px" }} className="bg-white rounded text-end p-1">
+                                <span className="fw-light text-black-50 mb-0"><del className="h6">799,99</del></span>
+                                <h4 className="fw-bold mb-0 h3 text-primary">
+                                    <span className="h6 text-primary pr-1">€</span>
+                                    <span>499</span>
+                                    <span className="h6">,99</span>
+                                </h4>
                             </div>
-                            <Button variant="danger" className="py-0 my-1">DISCOUNT</Button>
+                            <Button variant="danger" className="px-2 py-1 my-1 btn-sm w-100">DISCOUNT</Button>
                             <p className="h6 pb-0 mb-0">-60%</p>
                         </div>
                     </div>
