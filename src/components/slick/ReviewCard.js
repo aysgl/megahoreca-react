@@ -1,9 +1,5 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card"
-import product1 from "../../images/product-1.png";
-import SmallBadge from "../advertisement/SmallBadge";
+import { Card } from "react-bootstrap";
+import SmallBadge from "../product/SmallBadge";
 
 export default function ReviewCard({ badge, title, id, price }) {
     return (
@@ -11,7 +7,7 @@ export default function ReviewCard({ badge, title, id, price }) {
             <Card>
                 {badge &&
                     <div className="d-flex justify-content-end position-absolute top-0 end-0 p-2" style={{ zIndex: "2" }}>
-                        <SmallBadge />
+                        <SmallBadge badge={id} />
                     </div>
                 }
                 <div className="ratio ratio-1x1 position-relative">

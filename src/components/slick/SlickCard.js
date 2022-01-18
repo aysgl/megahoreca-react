@@ -1,11 +1,19 @@
-import { Row, Col, Card } from "react-bootstrap";
-import Badge from "../advertisement/Badge";
+import { useState } from "react";
+import { Row, Col, Card, Modal } from "react-bootstrap";
+import ActionButton from "../product/ActionButton";
+import Badge from "../product/Badge";
+import Stars from "../product/Stars";
+import Stock from "../product/Stock";
+import SlickModal from "./_SlickModal";
 
-export default function SlickCard({ stock, stars, badge, title, category, id, price }) {
+export default function SlickCard({ stock, badge, title, category, id, price, point }) {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
-        <div data-toggle="modal" data-target="#product-one" className="item mb-4">
-            {/* {products.map((pro, i) => */}
-            <Card>
+        <>
+            <Card className="mb-4" onClick={handleShow} style={{ cursor: "pointer" }}>
                 <Card.Body>
                     <div style={{ minHeight: "110px" }}>
                         <p className="text-black-50 mb-1 d-flex align-items-center small text-truncate">
@@ -16,26 +24,16 @@ export default function SlickCard({ stock, stars, badge, title, category, id, pr
                         <Card.Title className="mb-1 fw-bold h6">{title}</Card.Title>
 
                         {stock &&
-                            <p className="text-success small mb-0">
-                                <i style={{ fontSize: "9px" }} className="icon-Varlk-41 pe-2" />
-                                laatste {id} stuks {stock}
-                            </p>
+                            <Stock stock={stock} />
                         }
 
-                        {stars &&
-                            <p class="text-secondary mb-0">
-                                <i style={{ fontSize: "12px" }} class="icon-surface1-51 text-warning"></i>
-                                <i style={{ fontSize: "12px" }} class="icon-surface1-51 text-warning"></i>
-                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning"></i>
-                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning"></i>
-                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning pe-2"></i>
-                                <small>35</small>
-                            </p>
+                        {point &&
+                            <Stars point={point} />
                         }
 
                         {badge &&
                             <div className="d-flex justify-content-end">
-                                <Badge />
+                                <Badge badge={badge} />
                             </div>
                         }
                     </div>
@@ -50,18 +48,21 @@ export default function SlickCard({ stock, stars, badge, title, category, id, pr
                             </p>
                         </Col>
                         <Col className="text-end">
-                            <a className="text-black-50" href="#">
-                                <i style={{ fontSize: "18px" }}
-                                    className="icon-surface1-41 pe-3" />
-                            </a>
-                            <a className="text-black-50" href="#">
-                                <i className="icon-surface1-36" style={{ fontSize: "20px" }} />
-                            </a>
+                            <ActionButton />
                         </Col>
                     </Row>
                 </Card.Footer>
             </Card>
-            {/* )} */}
-        </div >
+
+            {/* <SlickModal centered show={show} onHide={handleClose} /> */}
+            <Modal centered show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <img className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${id}/400/400`} />
+                </Modal.Body>
+            </Modal>
+        </>
     )
 }

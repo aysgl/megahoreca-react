@@ -13,7 +13,7 @@ export default function HeaderSearch() {
                 aria-label="Vindt het nu!"
                 aria-describedby="basic-addon1"
             />
-            <Button variant="link" className="border border-start-0" id="basic-addon1">ZOEKEN</Button>
+            <Button variant="link" className="border border-start-0 fw-bold" id="basic-addon1">ZOEKEN</Button>
         </InputGroup>
     )
 }

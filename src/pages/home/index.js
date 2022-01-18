@@ -12,7 +12,7 @@ export default function Home() {
             <CarouselSection />
             <SlickCarouselSection api="https://jsonplaceholder.typicode.com/users" title="PROMOTIES VAN DE WEEK" />
             <Advertisement />
-            <MasonrySection />
+            <MasonrySection api="https://jsonplaceholder.typicode.com/users" />
             <SlickCarouselSection api="https://jsonplaceholder.typicode.com/comments" title="PROMOTIES VAN DE WEEK" />
             <ReviewCarouselSection title="EERDER BEKEKEN DOOR JOU" api="https://jsonplaceholder.typicode.com/users" />
             <PerksBanner />

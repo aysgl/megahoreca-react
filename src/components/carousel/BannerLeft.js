@@ -1,8 +1,7 @@
 import { Button, Col, Row } from "react-bootstrap";
-import mansets from "../../images/mansets.png"
 import React from "react";
-import Badge from "../advertisement/Badge";
-import SmallBadge from "../advertisement/SmallBadge";
+import Badge from "../product/Badge";
+import SmallBadge from "../product/SmallBadge";
 
 export default function BannerLeft() {
     return <Col lg={2} md={12} className="d-none d-xl-block">
@@ -19,7 +18,7 @@ export default function BannerLeft() {
                 </Col>
             </Row>
             <div>
-                <img className="img-fluid pb-3" src={mansets} />
+                <img className="img-fluid rounded" src="https://picsum.photos/200/400" />
             </div>
         </div>
     </Col>

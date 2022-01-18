@@ -107,6 +107,17 @@ $spacers: (
 
 // scss-docs-end spacer-variables-maps
 
+// Body
+// $body-bg: $gray-100 !default;
+$body-color: $black !default;
+
+// Links
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration: underline !default;
+
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: "Hind", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -158,7 +169,7 @@ $input-btn-padding-x-sm: 0.75rem !default;
 
 $input-btn-padding-y-lg: 1rem !default;
 $input-btn-padding-x-lg: 1.5rem !default;
-
+$input-border-color: $gray-300 !default;
 // scss-docs-end input-btn-variables
 
 // scss-docs-start border-radius-variables

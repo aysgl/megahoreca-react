@@ -4,7 +4,7 @@ export default function FooterTopCategory({ category }) {
             <li className="fw-bold">{category.title}</li>
             {category.subCategories.map(subCategory =>
                 <li key={subCategory}>
-                    {subCategory}
+                    <a href="#." className="text-secondary">{subCategory}</a>
                 </li>
             )}
         </ul>
