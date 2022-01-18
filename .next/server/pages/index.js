@@ -1234,7 +1234,8 @@ function Slider() {
                                             src: `https://picsum.photos/id/${i}/800/1200`,
                                             width: 800,
                                             height: 1200,
-                                            alt: "Product one"
+                                            alt: "Product one",
+                                            priority: true
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -1244,7 +1245,8 @@ function Slider() {
                                             src: `https://picsum.photos/id/${i}/800/400`,
                                             width: 800,
                                             height: 400,
-                                            alt: "Product one"
+                                            alt: "Product one",
+                                            priority: true
                                         })
                                     })
                                 ]

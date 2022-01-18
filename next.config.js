@@ -22,7 +22,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['https://picsum.photos/']
+    domains: ['picsum.photos']
   }
 }
 
