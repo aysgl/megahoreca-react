@@ -6,7 +6,7 @@ import Seperate from "../stuff/Seperate";
 
 export default function Advertisement() {
     return (
-        <Container className="py-4">
+        <Container>
             <ul className="list-unstyled d-flex align-items-stretch">
                 <li className="list-inline-item">
                     <img className="img-fluid shadow rounded" src={banner1} />

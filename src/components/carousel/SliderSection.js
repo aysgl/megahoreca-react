@@ -7,7 +7,7 @@ import Seperate from "../stuff/Seperate";
 
 export default function CarouselSection() {
     return (
-        <Container className="mt-3 mb-5">
+        <Container className="mt-3">
             <Row>
                 <BannerLeft />
                 <Slider />

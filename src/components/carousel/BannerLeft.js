@@ -8,7 +8,7 @@ export default function BannerLeft() {
         <div className="d-flex align-content-between flex-wrap h-100 border rounded p-2">
             <Row className="d-flex justify-content-between g-0">
                 <Col xs={9}>
-                    <p className="lh-sm mb-3"><span className="fw-light">Aanbevolen</span> Combinaties</p>
+                    <p className="lh-sm mb-3">Aanbevolen Combinaties</p>
                 </Col>
                 <Col xs={3}>
                     <SmallBadge />
@@ -18,7 +18,7 @@ export default function BannerLeft() {
                 </Col>
             </Row>
             <div>
-                <img className="img-fluid rounded" src="https://picsum.photos/200/400" />
+                <img className="img-fluid rounded" src="https://picsum.photos/200/300" />
             </div>
         </div>
     </Col>

@@ -7,7 +7,7 @@ import FooterTopCategory from "./FooterTopCategory";
 
 export default function FooterSectionTop() {
     return (
-        <Container className="py-5 text-left">
+        <Container>
             <Row>
                 <Col className="border-0 pe-4">
                     <FooterTopCategory category={CATEGORIES[0]} />

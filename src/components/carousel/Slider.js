@@ -22,17 +22,21 @@ export default function Slider() {
             {slider.map((slide, i) =>
                 <Carousel.Item key={i} className="bg-light rounded" interval={2000}>
                     <Row>
-                        <Col className="align-self-center">
-                            <img className="img-fluid rounded" src={`https://picsum.photos/id/${i}/250/500`} alt="Product one" />
+                        <Col className="align-self-center m-2">
+                            <div className="d-none d-lg-block">
+                                <img className="img-fluid rounded" src={`https://picsum.photos/id/${i}/800/1200`} alt="Product one" />
+                            </div>
+                            <div className="d-lg-none">
+                                <img className="img-fluid rounded" src={`https://picsum.photos/id/${i}/800/400`} alt="Product one" />
+                            </div>
                         </Col>
 
-                        <Col md={8} className="align-self-center pe-5">
+                        <Col md={8} className="align-self-center pe-5 m-2">
                             <div>
                                 <p className="text-black-30">{slide.id}# GARDEN</p>
-                                <h1 className="fw-bold pe-5">{slide.title}</h1>
-                                <p className="text-muted pb-3 pe-5">{slide.body}</p>
-                                <Button variant="primary"
-                                    className="rounded-0 px-4 p-2 fw-bold">SHOP
+                                <h1 className="fw-bold pe-5">{slide.title.substring(0, 30)}</h1>
+                                <p className="text-muted pb-3 pe-5">{slide.body.substring(0, 60)}</p>
+                                <Button variant="primary">SHOP
                                     NOW
                                 </Button>
                             </div>
