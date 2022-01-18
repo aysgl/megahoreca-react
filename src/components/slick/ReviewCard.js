@@ -1,0 +1,32 @@
+import React from "react";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card"
+import product1 from "../../images/product-1.png";
+import SmallBadge from "../advertisement/SmallBadge";
+
+export default function ReviewCard({ badge, title, id, price }) {
+    return (
+        <div data-toggle="modal" data-target="#product-one" className="item mb-4">
+            <Card>
+                {badge &&
+                    <div className="d-flex justify-content-end position-absolute top-0 end-0 p-2" style={{ zIndex: "2" }}>
+                        <SmallBadge />
+                    </div>
+                }
+                <div className="ratio ratio-1x1 position-relative">
+                    <img className="img-fluid rounded" src={`https://picsum.photos/id/${id}/200/200`} />
+                </div>
+                <Card.Body className="pb-0">
+                    <Card.Title className="mb-1 fw-bold small" style={{ minHeight: "36px" }}>{title}</Card.Title>
+                </Card.Body>
+                <Card.Footer className="border-0 pt-0">
+                    <p className="fw-bold lh-1 h5">
+                        <span>€{price},</span>
+                        <span className="small">{price + 1}</span>
+                    </p>
+                </Card.Footer>
+            </Card>
+        </div>
+    )
+}

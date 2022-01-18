@@ -1,54 +1,67 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card"
-import product1 from "../../images/product-1.png";
+import { Row, Col, Card } from "react-bootstrap";
+import Badge from "../advertisement/Badge";
 
-export default function SlickCard({ stock, stars }) {
-    return <>
-        <div data-toggle="modal" data-target="#product-one" className="item">
-            <Card className="border-end">
-                <Card.Body className="p-0">
-                    <div className="p-3 pb-0 mb-0">
-                        <p className="text-black-50 mb-1 d-flex align-items-center small">
+export default function SlickCard({ stock, stars, badge, title, category, id, price }) {
+    return (
+        <div data-toggle="modal" data-target="#product-one" className="item mb-4">
+            {/* {products.map((pro, i) => */}
+            <Card>
+                <Card.Body>
+                    <div style={{ minHeight: "110px" }}>
+                        <p className="text-black-50 mb-1 d-flex align-items-center small text-truncate">
                             <i style={{ fontSize: "9px" }} className="icon-surface1-44 pe-2" />
-                            Computers & Tablets
+                            category
+                            <i style={{ fontSize: "9px" }} className="icon-surface1-44 px-2" /> {category}
                         </p>
-                        <Card.Title className="mb-1 fw-bold h6">Apple iPad (2018) 32GB</Card.Title>
+                        <Card.Title className="mb-1 fw-bold h6">{title}</Card.Title>
+
                         {stock &&
                             <p className="text-success small mb-0">
                                 <i style={{ fontSize: "9px" }} className="icon-Varlk-41 pe-2" />
-                                laatste 10 stuks
+                                laatste {id} stuks {stock}
                             </p>
                         }
+
                         {stars &&
-                            <p className="text-success small mb-0">
-                                <i style={{ fontSize: "9px" }} className="icon-Varlk-41 pe-2" />
-                                yildiz
+                            <p class="text-secondary mb-0">
+                                <i style={{ fontSize: "12px" }} class="icon-surface1-51 text-warning"></i>
+                                <i style={{ fontSize: "12px" }} class="icon-surface1-51 text-warning"></i>
+                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning"></i>
+                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning"></i>
+                                <i style={{ fontSize: "12px" }} class="icon-surface1-52 text-warning pe-2"></i>
+                                <small>35</small>
                             </p>
                         }
+
+                        {badge &&
+                            <div className="d-flex justify-content-end">
+                                <Badge />
+                            </div>
+                        }
                     </div>
-                    <div style={{ height: "250px" }} className="p-2 pt-4 overlay">
-                        <img className="img-fluid" src={product1} />
-                    </div>
+                    <img className="img-fluid rounded" src={`https://picsum.photos/id/${id}/200/200`} />
                 </Card.Body>
-                <Card.Footer>
-                    <Row className="d-flex align-items-center">
+                <Card.Footer className="border-0">
+                    <Row className="d-flex align-items-center justify-content-between">
                         <Col>
-                            <h3 className="fw-bold"><span>€499,</span><span className="h6">99</span></h3>
+                            <p className="fw-bold lh-1 h5">
+                                <span>€{price},</span>
+                                <span className="small">{price + 1}</span>
+                            </p>
                         </Col>
                         <Col className="text-end">
-                            <a className="text-black-30" href="#">
+                            <a className="text-black-50" href="#">
                                 <i style={{ fontSize: "18px" }}
                                     className="icon-surface1-41 pe-3" />
                             </a>
-                            <a className="text-black-30" href="#">
+                            <a className="text-black-50" href="#">
                                 <i className="icon-surface1-36" style={{ fontSize: "20px" }} />
                             </a>
                         </Col>
                     </Row>
                 </Card.Footer>
             </Card>
-        </div>
-    </>
+            {/* )} */}
+        </div >
+    )
 }

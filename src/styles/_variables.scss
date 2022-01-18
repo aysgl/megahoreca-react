@@ -38,13 +38,13 @@ $grays: (
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
+$purple: #9d1d96 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
-$orange: #e06331 !default;
+$orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #198754 !default;
-$teal: #25d764 !default;
+$teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 // scss-docs-end color-variables
 
@@ -67,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $orange !default;
+$primary: $purple !default;
 $secondary: $gray-600 !default;
 $success: $teal !default;
 $info: $cyan !default;
@@ -162,7 +162,7 @@ $input-btn-padding-x-lg: 1.5rem !default;
 // scss-docs-end input-btn-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: 0.15rem !default;
+$border-radius: 0.35rem !default;
 $border-radius-sm: 0.2rem !default;
 $border-radius-lg: 0.3rem !default;
 $border-radius-pill: 50rem !default;
@@ -205,3 +205,19 @@ $input-placeholder-color: $gray-500;
 // scss-docs-start dropdown-variables
 $dropdown-box-shadow: $box-shadow-lg !default;
 // scss-docs-end dropdown-variables
+
+// scss-docs-start box-shadow-variables
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
+// scss-docs-end box-shadow-variables
+
+// Cards
+// scss-docs-start card-variables
+$card-border-color: rgba($black, 0.125) !default;
+$card-box-shadow: $box-shadow !default;
+$card-cap-bg: transparent !default;
+$card-bg: $white !default;
+$card-img-overlay-padding: $spacer !default;
+// scss-docs-end card-variables

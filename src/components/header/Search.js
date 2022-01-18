@@ -8,12 +8,12 @@ export default function HeaderSearch() {
                 <i className="icon-surface1-35" />
             </InputGroup.Text>
             <FormControl
-                className="border-start-0"
+                className="border-start-0 border-end-0"
                 placeholder="Vindt het nu!"
                 aria-label="Vindt het nu!"
                 aria-describedby="basic-addon1"
             />
-            <Button id="basic-addon1">ZOEKEN</Button>
+            <Button variant="link" className="border border-start-0" id="basic-addon1">ZOEKEN</Button>
         </InputGroup>
     )
 }

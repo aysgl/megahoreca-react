@@ -262,136 +262,6 @@ thead tr {
   text-decoration: none;
 }
 
-/*--- Carousel OWL ---*/
-.item {
-  cursor: pointer;
-}
-
-.item img {
-  width: auto !important;
-  display: inline-block !important;
-}
-
-.overlay {
-  position: relative;
-  transition-property: all 0.3s ease;
-}
-
-.item:hover .overlay {
-  -webkit-filter: contrast(110%) !important;
-  filter: contrast(110%) !important;
-  /*transform: scale(1.02);*/
-}
-
-.owl-flex {
-  height: 420px !important;
-}
-
-.owl-item:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.owl-next,
-.owl-prev {
-  border: 1px solid #ddd;
-  color: #ddd;
-  position: absolute;
-  top: 45%;
-  height: 30px;
-  line-height: 30px;
-  width: 30px;
-  padding: 0px;
-  font-size: 10px;
-  outline: none !important;
-  z-index: 9;
-}
-
-.owl-next {
-  right: 0px;
-}
-
-.owl-prev {
-  left: 0px;
-}
-
-.owl-dots {
-  text-align: center;
-  padding-top: 15px;
-}
-
-.owl-dots button.owl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  background: #c9c9c9 !important;
-  margin: 0 3px;
-}
-
-.owl-dots button.owl-dot.active {
-  background-color: $primary !important;
-}
-
-.owl-dots button.owl-dot:focus {
-  outline: none;
-}
-
-/*--- Carousel OWL end ---*/
-.no-flex {
-  /*flex: 1 1 auto;*/
-  flex: inherit !important;
-}
-
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid #f0f0f0;
-  border-bottom: none;
-  border-top: none;
-  transition: all 0.3s;
-}
-
-.card:last-child {
-  border: 1px solid white;
-}
-
-.card:first-child {
-  border-left: none;
-}
-
-.card:hover,
-.card-deck:hover {
-  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.1) !important;
-  z-index: 2 !important;
-  overflow: visible !important;
-  position: relative !important;
-}
-
-.card-deck {
-  background-color: transparent !important;
-}
-
-.card-footer {
-  background-color: transparent !important;
-  border-top: none !important;
-}
-
-.navbar-nav {
-  border-right: 1px solid rgba(240, 240, 240, 0.15) !important;
-}
-
-.horizantal-hr {
-  border-bottom: 1px solid #f0f0f0 !important;
-  width: 100%;
-}
-
 /*--- Payment steps ---*/
 #msform fieldset:not(:first-of-type) {
   display: none;
@@ -639,36 +509,34 @@ ins {
     height: 40px;
     border-radius: 4px;
     background: #25d764;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 12px solid #25d764;
+      bottom: -10px;
+    }
   }
 
   .percent-tag-blue {
     position: absolute;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 4px;
     background: $primary;
-  }
-
-  .percent-tag:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 12px solid #25d764;
-    bottom: -10px;
-  }
-
-  .percent-tag-blue:before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 3.5rem solid transparent;
-    border-right: 3.5rem solid transparent;
-    border-top: 30px solid $primary;
-    bottom: -29px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 3rem solid transparent;
+      border-right: 3rem solid transparent;
+      border-top: 30px solid $primary;
+      bottom: -28px;
+    }
   }
 
   .percent-tag__content {

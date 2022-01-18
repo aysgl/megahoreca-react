@@ -7,10 +7,11 @@ import product6 from "../images/product-6.png"
 import product7 from "../images/product-7.png"
 import product8 from "../images/product-8.png"
 import product9 from "../images/product-9.png"
+import Seperate from "./stuff/Seperate";
 
 export default function MasonrySection() {
     return <div className="d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block">
-        <Container className="py-4 px-0 d-flex">
+        <Container className="py-4 d-flex">
             <Row>
                 <Col sm={6} className="d-flex align-self-stretch pr-0">
                     <div className="shadow rounded">
@@ -139,5 +140,6 @@ export default function MasonrySection() {
                 </Col>
             </Row>
         </Container>
+        <Seperate />
     </div>
 }

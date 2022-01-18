@@ -1,0 +1,6 @@
+.card {
+  &:hover {
+    box-shadow: $box-shadow;
+    border-color: $white;
+  }
+}

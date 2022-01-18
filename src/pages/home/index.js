@@ -1,7 +1,8 @@
 import React from 'react'
-import HeroSection from '../../components/Advertisement'
-import PerksBanner from '../../components/PerksBanner'
+import Advertisement from '../../components/advertisement/Advertisement'
+import PerksBanner from '../../components/advertisement/PerksBanner'
 import SlickCarouselSection from '../../components/slick/SlickCarouselSection'
+import ReviewCarouselSection from "../../components/slick/ReviewCarouselSection"
 import MasonrySection from '../../components/MasonrySection'
 import CarouselSection from '../../components/carousel/SliderSection'
 
@@ -9,11 +10,11 @@ export default function Home() {
     return (
         <>
             <CarouselSection />
-            <SlickCarouselSection title="PROMOTIES VAN DE WEEK" />
-            <HeroSection />
+            <SlickCarouselSection api="https://jsonplaceholder.typicode.com/users" title="PROMOTIES VAN DE WEEK" />
+            <Advertisement />
             <MasonrySection />
-            <SlickCarouselSection title="PROMOTIES VAN DE WEEK" />
-            <SlickCarouselSection title="EERDER BEKEKEN DOOR JOU" card="small gelecek" />
+            <SlickCarouselSection api="https://jsonplaceholder.typicode.com/comments" title="PROMOTIES VAN DE WEEK" />
+            <ReviewCarouselSection title="EERDER BEKEKEN DOOR JOU" api="https://jsonplaceholder.typicode.com/users" />
             <PerksBanner />
         </>
     )

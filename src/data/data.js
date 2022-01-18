@@ -1,6 +1,9 @@
 export const CATEGORIES = [
     {
+        id: 1,
         title: "ASSORTIMENT",
+        icon: "https://picsum.photos/650/650?random=12",
+        img: "https://picsum.photos/650/650?random=1",
         subCategories: [
             "Tuin",
             "Gereedschap",
@@ -24,7 +27,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 2,
         title: "TUIN",
+        icon: "https://picsum.photos/650/650?random=13",
+        img: "https://picsum.photos/650/650?random=2",
         subCategories: [
             "Tuinconstructies & opberging",
             "Tuingereedschap & machines",
@@ -41,7 +47,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 3,
         title: "GEREEDSCHAP",
+        icon: "https://picsum.photos/650/650?random=14",
+        img: "https://picsum.photos/650/650?random=3",
         subCategories: [
             "Gereedschap & machines",
             "Handgereedschap",
@@ -57,7 +66,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 4,
         title: "BOUWMATERIALEN",
+        icon: "https://picsum.photos/650/650?random=15",
+        img: "https://picsum.photos/650/650?random=4",
         subCategories: [
             "Metselwerk, cement & beton",
             "Dakbedekking",
@@ -83,7 +95,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 5,
         title: "HOUT",
+        icon: "https://picsum.photos/650/650?random=16",
+        img: "https://picsum.photos/650/650?random=5",
         subCategories: [
             "Deuren & ramen",
             "Plaatmateriaal",
@@ -94,7 +109,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 6,
         title: "VERF & HOUTBESCHERMING",
+        icon: "https://picsum.photos/650/650?random=17",
+        img: "https://picsum.photos/650/650?random=6",
         subCategories: [
             "Verf",
             "Schildersgereedschap",
@@ -103,7 +121,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 7,
         title: "SANITAIR",
+        icon: "https://picsum.photos/650/650?random=18",
+        img: "https://picsum.photos/650/650?random=7",
         subCategories: [
             "WC's & accessoires",
             "Douches",
@@ -118,7 +139,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 8,
         title: "ELEKTRICITEIT",
+        icon: "https://picsum.photos/650/650?random=19",
+        img: "https://picsum.photos/650/650?random=8",
         subCategories: [
             "Installatiemateriaal",
             "Schakelmateriaal",
@@ -129,7 +153,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 9,
         title: "IJZERWAREN",
+        icon: "https://picsum.photos/650/650?random=20",
+        img: "https://picsum.photos/650/650?random=9",
         subCategories: [
             "Bevestigingsmateriaal",
             "Profielen, platen & accessoires",
@@ -143,7 +170,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 10,
         title: "VERLICHTING",
+        icon: "https://picsum.photos/650/650?random=21",
+        img: "https://picsum.photos/650/650?random=10",
         subCategories: [
             "Buitenverlichting",
             "Lampen",
@@ -153,7 +183,10 @@ export const CATEGORIES = [
         ]
     },
     {
+        id: 11,
         title: "VERWARMING",
+        icon: "https://picsum.photos/650/650?random=22",
+        img: "https://picsum.photos/650/650?random=11",
         subCategories: [
             "Buitenverwarming",
             "Pelletkachels",
@@ -168,7 +201,4 @@ export const CATEGORIES = [
             "Luchtbevochtigers & -ontvochtigers"
         ]
     }
-
-
-
 ]

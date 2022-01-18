@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Dropdown, Button } from "react-bootstrap";
 
-export default function HeaderShoppingcart() {
+export default function DropdownCart() {
     const [show, setShow] = useState(false);
     const showDropdown = (e) => {
         setShow(!show);
@@ -25,8 +25,8 @@ export default function HeaderShoppingcart() {
                 <Dropdown.Item>ürünler gelecek</Dropdown.Item>
                 <Dropdown.Divider />
                 <Container className="btn-group">
-                    <Button className="rounded me-1" variant="primary">GA NAAR MAND</Button>
-                    <Button className="rounded" variant="primary">NU KOPEN</Button>
+                    <Button className="rounded me-1 btn-sm" variant="primary">GA NAAR MAND</Button>
+                    <Button className="rounded btn-sm" variant="primary">NU KOPEN</Button>
                 </Container>
             </Dropdown.Menu>
         </Dropdown>

@@ -4,8 +4,8 @@ import bannerResponsiveText from "../../images/banner-responsive-text.png"
 
 export default function BannerRight() {
     return <Col xl={2} lg={2} md={12} className="d-flex align-content-stretch">
-        <div className="d-none d-lg-block ">
-            <div className="d-flex align-content-between flex-wrap h-100 bg-light">
+        <div className="d-none d-lg-block">
+            <div className="d-flex align-content-between flex-wrap h-100 bg-light rounded">
                 <div>
                     <img className="img-fluid p-3" src={bannerResponsiveText} />
                 </div>

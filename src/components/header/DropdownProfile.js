@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
 
-export default function HeaderProfileDropdown() {
+export default function DropdownProfile() {
     const [show, setShow] = useState(false);
     const showDropdown = (e) => {
         setShow(!show);
