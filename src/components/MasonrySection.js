@@ -22,7 +22,7 @@ export default function MasonrySection({ api, stock, stars, badge, id }) {
                 <Row className="g-3">
                     <Col lg={6} md={6} className="">
                         {products.slice(0, 1).map(pro =>
-                            <BigCard title={pro.name} price={pro.id} category={pro.username} point={pro.id} stock={pro.id} />
+                            <BigCard key={pro.id} title={pro.name} price={pro.id} category={pro.username} point={pro.id} stock={pro.id} />
                         )}
                     </Col>
                     <Col lg={3} md={3}>
@@ -30,14 +30,14 @@ export default function MasonrySection({ api, stock, stars, badge, id }) {
                             <div className="h-50 col">
                                 <div className="h-100 d-flex align-content-between flex-wrap text-left">
                                     {products.slice(1, 2).map(pro =>
-                                        <SmallCard title={pro.name} price={pro.id} category={pro.username} badge={pro.id} stock={pro.id} />
+                                        <SmallCard key={pro.id} title={pro.name} price={pro.id} category={pro.username} badge={pro.id} stock={pro.id} />
                                     )}
                                 </div>
                             </div>
                             <div className="h-50 col">
                                 <div className="h-100 d-flex align-content-between flex-wrap text-left">
                                     {products.slice(2, 3).map(pro =>
-                                        <SmallCard title={pro.name} price={pro.id} category={pro.username} point={pro.id} />
+                                        <SmallCard key={pro.id} title={pro.name} price={pro.id} category={pro.username} point={pro.id} />
                                     )}
                                 </div>
                             </div>
@@ -48,14 +48,14 @@ export default function MasonrySection({ api, stock, stars, badge, id }) {
                             <div className="h-50 col">
                                 <div className="h-100 d-flex align-content-between flex-wrap text-left">
                                     {products.slice(3, 4).map(pro =>
-                                        <SmallCard title={pro.name} price={pro.id} category={pro.username} point={pro.id} />
+                                        <SmallCard key={pro.id} title={pro.name} price={pro.id} category={pro.username} point={pro.id} />
                                     )}
                                 </div>
                             </div>
                             <div className="h-50 col">
                                 <div className="h-100 d-flex align-content-between flex-wrap text-left">
                                     {products.slice(4, 5).map(pro =>
-                                        <SmallCard title={pro.name} price={pro.id} category={pro.username} stock={pro.id} />
+                                        <SmallCard key={pro.id} title={pro.name} price={pro.id} category={pro.username} stock={pro.id} />
                                     )}
                                 </div>
                             </div>

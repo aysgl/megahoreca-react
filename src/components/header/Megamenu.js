@@ -34,7 +34,7 @@ export default function Megamenu({ category }) {
                                     <Col sm={3}>
                                         <Nav variant="pills" className="flex-column">
                                             {category.map(cat =>
-                                                <Nav.Item>
+                                                <Nav.Item key={cat.id}>
                                                     <Nav.Link eventKey={cat.id}>
                                                         <img className='rounded-circle mx-2' height={20} src={cat.icon} />
                                                         {cat.title}
@@ -46,7 +46,7 @@ export default function Megamenu({ category }) {
                                     <Col sm={9}>
                                         <Tab.Content>
                                             {category.map(cat =>
-                                                <Tab.Pane eventKey={cat.id}>
+                                                <Tab.Pane key={cat.id} eventKey={cat.id}>
                                                     <Row style={{ zIndex: "1", position: "relative" }}>
                                                         <Col md={5}>
                                                             {cat.subCategories.map(sub =>

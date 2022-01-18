@@ -53,18 +53,16 @@ export default function SlickCarousel({ api }) {
     return (
         <Slider {...settings}>
             {products.map((pro, i) =>
-                <>
-                    <SlickCard key={i}
-                        api={api}
-                        id={pro.id}
-                        photo={pro.id}
-                        price={pro.id}
-                        category={pro.name}
-                        title={pro.name}
-                        stock={pro.id}
-                        point={pro.id == 3 || pro.id == 8 || pro.id == 9}
-                        badge={pro.id == 4 || pro.id == 7 || pro.id == 1} />
-                </>
+                <SlickCard key={i}
+                    api={api}
+                    id={pro.id}
+                    photo={pro.id}
+                    price={pro.id}
+                    category={pro.name}
+                    title={pro.name}
+                    stock={pro.id}
+                    point={pro.id == 3 || pro.id == 8 || pro.id == 9}
+                    badge={pro.id == 4 || pro.id == 7 || pro.id == 1} />
             )}
         </Slider>
     );

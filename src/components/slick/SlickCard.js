@@ -1,19 +1,24 @@
 import { useState } from "react";
-import { Row, Col, Card, Modal } from "react-bootstrap";
+import { Row, Col, Card, Modal, Button } from "react-bootstrap";
 import ActionButton from "../product/ActionButton";
 import Badge from "../product/Badge";
 import Stars from "../product/Stars";
 import Stock from "../product/Stock";
-import SlickModal from "./_SlickModal";
+import SlickModal from "./SlickModal";
 
-export default function SlickCard({ stock, badge, title, category, id, price, point }) {
+const SlickCard = ({ stock, badge, title, category, id, price, point }) => {
     const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const closeModal = () => {
+        setShow(false);
+    };
+    const openModal = () => {
+        setShow(true);
+    };
+
     return (
         <>
-            <Card className="mb-4" onClick={handleShow} style={{ cursor: "pointer" }}>
+            <Card className="mb-4" style={{ cursor: "pointer" }}>
                 <Card.Body>
                     <div style={{ minHeight: "110px" }}>
                         <p className="text-black-50 mb-1 d-flex align-items-center small text-truncate">
@@ -37,7 +42,12 @@ export default function SlickCard({ stock, badge, title, category, id, price, po
                             </div>
                         }
                     </div>
-                    <img className="img-fluid rounded" src={`https://picsum.photos/id/${id}/200/200`} />
+                    <img onClick={openModal} className="img-fluid rounded" src={`https://picsum.photos/id/${id}/200/200`} />
+
+                    <SlickModal show={show} handleClose={closeModal} title={title}>
+                        <img className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${id}/200/200`} />
+                    </SlickModal>
+
                 </Card.Body>
                 <Card.Footer className="border-0">
                     <Row className="d-flex align-items-center justify-content-between">
@@ -53,16 +63,8 @@ export default function SlickCard({ stock, badge, title, category, id, price, po
                     </Row>
                 </Card.Footer>
             </Card>
-
-            {/* <SlickModal centered show={show} onHide={handleClose} /> */}
-            <Modal centered show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <img className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${id}/400/400`} />
-                </Modal.Body>
-            </Modal>
         </>
     )
 }
+
+export default SlickCard

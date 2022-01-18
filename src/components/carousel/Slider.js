@@ -20,7 +20,7 @@ export default function Slider() {
     return <Col xl={8} lg={9} md={12} className="px-0">
         <Carousel fade>
             {slider.map((slide, i) =>
-                <Carousel.Item className="bg-light rounded" interval={2000}>
+                <Carousel.Item key={i} className="bg-light rounded" interval={2000}>
                     <Row>
                         <Col className="align-self-center">
                             <img className="img-fluid rounded" src={`https://picsum.photos/id/${i}/250/500`} alt="Product one" />

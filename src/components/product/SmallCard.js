@@ -1,10 +1,20 @@
+import { useState } from "react"
 import { Card, Row, Col } from "react-bootstrap"
 import Stock from "./Stock"
 import Badge from "./Badge"
 import Stars from "./Stars"
 import ActionButton from "./ActionButton"
+import SlickModal from "../slick/SlickModal"
 
 export default function SmallCard({ title, category, point, price, stock, badge, id }) {
+    const [show, setShow] = useState(false);
+
+    const closeModal = () => {
+        setShow(false);
+    };
+    const openModal = () => {
+        setShow(true);
+    };
     return (
         <Card className="w-100 h-100">
             <Card.Body>
@@ -30,7 +40,11 @@ export default function SmallCard({ title, category, point, price, stock, badge,
                         </div>
                     }
                 </div>
-                <img className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/100`} />
+                <img onClick={openModal} className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/100`} />
+
+                <SlickModal show={show} handleClose={closeModal} title={title}>
+                    <img className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/200`} />
+                </SlickModal>
             </Card.Body>
             <Card.Footer className="border-0">
                 <Row className="d-flex align-items-center justify-content-between">

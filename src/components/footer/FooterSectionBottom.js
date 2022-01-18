@@ -22,7 +22,7 @@ export default function FooterSectionBottom() {
                                         </Col>
                                         <Col sm={10}>
                                             <p className="h4 mb-0">+800 243 00 00 </p>
-                                            <p>hello@MegaHoreca.com</p>
+                                            <a href="mailto:'hello@megahoreca.com'">hello@megahoreca.com</a>
                                         </Col>
                                     </Row>
 
