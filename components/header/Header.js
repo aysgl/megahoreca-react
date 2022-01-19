@@ -14,9 +14,8 @@ export default function Header() {
                 <Navbar.Brand href="#home" className="mr-auto">
                     <Image
                         src={logo}
-                        className=""
-                        style={{ width: '200px' }}
                         alt="Megahoreca"
+                        width={200}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle />

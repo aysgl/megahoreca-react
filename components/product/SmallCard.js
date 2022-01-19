@@ -36,15 +36,15 @@ export default function SmallCard({ title, category, point, price, stock, badge,
                     }
 
                     {badge &&
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-end position-relative" style={{ zIndex: "2" }}>
                             <Badge badge={badge} />
                         </div>
                     }
                 </div>
-                <Image onClick={openModal} className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/100`} alt="" width={200} height={100} />
+                <Image onClick={openModal} className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/400/200`} alt="" width={400} height={200} />
 
                 <SlickModal show={show} handleClose={closeModal} title={title}>
-                    <Image className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/200`} alt="" width={200} height={200} />
+                    <Image className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/200`} alt="" width={600} height={600} />
                 </SlickModal>
             </Card.Body>
             <Card.Footer className="border-0">

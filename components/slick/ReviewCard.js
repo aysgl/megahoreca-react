@@ -11,7 +11,7 @@ export default function ReviewCard({ badge, title, id, price }) {
                         <SmallBadge badge={id} />
                     </div>
                 }
-                <div className="ratio ratio-1x1 position-relative">
+                <div className="position-relative">
                     <Image className="img-fluid rounded" src={`https://picsum.photos/id/${id}/200/200`} alt="" width={200} height={200} />
                 </div>
                 <Card.Body className="pb-0">

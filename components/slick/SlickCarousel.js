@@ -58,8 +58,8 @@ export default function SlickCarousel() {
                     id={pro.id}
                     photo={pro.id}
                     price={pro.id}
-                    category={pro.name}
-                    title={pro.name}
+                    category={pro.title}
+                    title={pro.title}
                     stock={pro.id}
                     point={pro.id == 3 || pro.id == 8 || pro.id == 9}
                     badge={pro.id == 4 || pro.id == 7 || pro.id == 1} />

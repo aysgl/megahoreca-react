@@ -42,10 +42,10 @@ export default function BigCard({ title, category, point, price, stock, badge, i
                     }
                 </div>
 
-                <Image onClick={openModal} className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/400/300`} width={400} height={300} alt="" />
+                <Image onClick={openModal} className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/600/400`} width={600} height={400} layout="responsive" alt="" />
 
                 <SlickModal show={show} handleClose={closeModal} title={title}>
-                    <Image className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/200/200`} alt="" width={200} height={200} />
+                    <Image className="img-fluid w-100 rounded" src={`https://picsum.photos/id/${price}/800/800`} alt="" width={800} height={800} />
                 </SlickModal>
             </Card.Body>
 

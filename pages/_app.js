@@ -1,5 +1,7 @@
 import React from "react";
 import App from 'next/app';
+import Layout from "./layout"
+import SSRProvider from 'react-bootstrap/SSRProvider';
 import '../styles/globals.scss'
 
 class MyApp extends App {
@@ -11,7 +13,11 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Component {...pageProps} />
+      <SSRProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </SSRProvider>
     );
   }
 }

@@ -35,8 +35,13 @@ export default function Megamenu({ category }) {
                                         <Nav variant="pills" className="flex-column">
                                             {category.map(cat =>
                                                 <Nav.Item key={cat.id}>
-                                                    <Nav.Link eventKey={cat.id}>
-                                                        <Image className='rounded-circle mx-2' height={20} src={cat.icon} alt="" />
+                                                    <Nav.Link eventKey={cat.id} className='position-relative'>
+                                                        <img className='rounded-circle mx-2'
+                                                            width={20}
+                                                            height={20}
+                                                            placeholder="blur"
+                                                            layout='intrinsic'
+                                                            src={cat.icon} alt="" />
                                                         {cat.title}
                                                     </Nav.Link>
                                                 </Nav.Item>
@@ -57,8 +62,16 @@ export default function Megamenu({ category }) {
                                                                 </ul>
                                                             )}
                                                         </Col>
+                                                        <Col md="7" className='text-end'>
+                                                            <Image src={cat.img}
+                                                                alt=""
+                                                                width={650}
+                                                                height={650}
+                                                                layout='fixed'
+                                                                // unoptimized={true}
+                                                                placeholder="blur" />
+                                                        </Col>
                                                     </Row>
-                                                    <Image className='position-absolute end-0 bottom-0' src={cat.img} alt="" />
                                                 </Tab.Pane>
                                             )}
                                         </Tab.Content>

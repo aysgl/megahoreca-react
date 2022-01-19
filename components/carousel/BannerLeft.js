@@ -1,4 +1,4 @@
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import React from "react";
 import Badge from "../product/Badge";
 import SmallBadge from "../product/SmallBadge";
@@ -14,7 +14,7 @@ export default function BannerLeft() {
                 <Col xs={3}>
                     <SmallBadge />
                 </Col>
-                <Col xs={12}>
+                <Col xs={12} className="position-relative" style={{ zIndex: "1" }}>
                     <Badge />
                 </Col>
             </Row>

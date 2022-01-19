@@ -38,7 +38,7 @@ const SlickCard = ({ stock, badge, title, category, id, price, point }) => {
                         }
 
                         {badge &&
-                            <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end position-relative" style={{ zIndex: "1" }}>
                                 <Badge badge={badge} />
                             </div>
                         }
